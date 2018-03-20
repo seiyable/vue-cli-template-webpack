@@ -2,8 +2,10 @@
  Template
 ================================================== -->
 <template>
-  <div id="app">
-    app
+  <div>
+    <p>
+      This is home
+    </p>
   </div>
 </template>
 
@@ -12,16 +14,12 @@
 ================================================== -->
 <script>
 export default {
-  name: 'App'
+  name: 'Home'
 }
 </script>
-。
+
 <!-- =================================================
  Style
 ================================================== -->
-<style lang='stylus'>
-@import 'reset-css/reset.css'
-@import '/stylus/base/*'
-@import '/stylus/fonts'
-@import '/stylus/global-styles'
+<style scoped lang='stylus'>
 </style>

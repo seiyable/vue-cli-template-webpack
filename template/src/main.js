@@ -7,6 +7,13 @@ import App from './App'
 {{#router}}
 import router from './router'
 {{/router}}
+import Vuex from 'vuex'
+import _store from './store'
+import mixin from '@/mixins/global'
+
+Vue.mixin(mixin)
+Vue.use(Vuex)
+const store = new Vuex.Store(_store)
 
 Vue.config.productionTip = false
 
@@ -16,6 +23,7 @@ new Vue({
   {{#router}}
   router,
   {{/router}}
+  store,
   {{#if_eq build "runtime"}}
   render: h => h(App)
   {{/if_eq}}
